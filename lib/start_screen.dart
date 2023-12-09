@@ -9,8 +9,10 @@ class StartScreen extends StatelessWidget{
       mainAxisSize: MainAxisSize.min,
       children: [
 
-         Opacity(opacity: 0.7, child:Image.asset("assets/images/logo.png", width: 200,),
-),
+//           Opacity(opacity: 0.7, child:Image.asset("assets/images/logo.png", width: 200,)
+
+// ),
+Image.asset("assets/images/logo.png", width: 200),
      const SizedBox(height:18),
      const  Text("Learn flutter in fun way", style: TextStyle(color: Colors.white, fontSize: 20),),
           const SizedBox(height:30),
