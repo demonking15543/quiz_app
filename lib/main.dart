@@ -18,7 +18,9 @@ class QizeApp extends StatelessWidget {
               Color.fromARGB(255, 107, 15, 168)
 
 
-          ])),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight)),
           child: const StartScreen(),
         ),
       ),
