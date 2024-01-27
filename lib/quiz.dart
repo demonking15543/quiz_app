@@ -32,6 +32,7 @@ void switchScreen(){
 }
 
 
+
 void chooseAnswer(String answer){
   selectedAnswer.add(answer);
   if(selectedAnswer.length == questions.length){
@@ -41,6 +42,15 @@ void chooseAnswer(String answer){
   }
   
 }
+
+void restartTest(){
+  setState(() {
+    selectedAnswer = [];
+    // activeScreeen = const QuestionsScreen();
+    activeScreen = "start-screen";
+  });
+}
+
 
 @override
  Widget build(context) {
@@ -55,7 +65,7 @@ void chooseAnswer(String answer){
 
      }
      if(activeScreen=="results-screen") {
-     screenWidget=  ResultsScreen(choosenAnswers: selectedAnswer,);
+     screenWidget=  ResultsScreen(choosenAnswers: selectedAnswer, restartTest:restartTest);
 
      }
 
