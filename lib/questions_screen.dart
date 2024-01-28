@@ -27,7 +27,9 @@ setState(() {
 }
 @override
   Widget build(context) {
-    final currentQuestions = questions[currentQuestionIndex];
+    final  shuffleQuestions = List.of(questions);
+    shuffleQuestions.shuffle();
+    final currentQuestions = shuffleQuestions[currentQuestionIndex];
 
     return SizedBox(
       width: double.infinity,
