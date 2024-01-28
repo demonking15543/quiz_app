@@ -29,7 +29,7 @@ setState(() {
   Widget build(context) {
     final  shuffleQuestions = List.of(questions);
     shuffleQuestions.shuffle();
-    final currentQuestions = shuffleQuestions[currentQuestionIndex];
+    final currentQuestions = questions[currentQuestionIndex];
 
     return SizedBox(
       width: double.infinity,
