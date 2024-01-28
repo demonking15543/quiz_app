@@ -1,6 +1,6 @@
 import 'package:quiz_app/moddels/quiz_question.dart';
 
-const questions = [
+ const questions = [
   QuizQuestion(
     'What are the main building blocks of Flutter UIs?',
     [
@@ -52,4 +52,42 @@ const questions = [
       'By calling updateState()',
     ],
   ),
+  QuizQuestion(
+    'What is the primary function of the initState() method in a StatefulWidget?',
+    [
+      'It is called when the widget is inserted into the tree',
+      'It is called when the widget is removed from the tree',
+      'It is called when the widget is updated',
+      'It is called when the widget is created for the first time',
+    ],
+  ),
+  QuizQuestion(
+    'In Flutter, what does the term "Hot Reload" refer to?',
+    [
+      'It allows you to quickly see the effects of the code changes without restarting the app',
+      'It is a way to load assets dynamically at runtime',
+      'It is a mechanism to reload the entire application from scratch',
+      'It refers to the process of updating the Flutter framework to the latest version',
+    ],
+  ),
+  QuizQuestion(
+    'What is the purpose of the pubspec.yaml file in a Flutter project?',
+    [
+      'It is used to specify the project dependencies and metadata',
+      'It is the main entry point of the Flutter application',
+      'It defines the layout of the user interface',
+      'It is used to configure the app\'s launch settings',
+    ],
+  ),
+  QuizQuestion(
+    'When creating a new Flutter project, what command can be used in the terminal?',
+    [
+      'flutter create my_project',
+      'dart new my_project',
+      'project create my_project',
+      'create flutter my_project',
+    ],
+  ),
+
+
 ];
