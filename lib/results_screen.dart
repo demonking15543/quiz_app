@@ -47,7 +47,7 @@ summary.add({
                         QuestionSummary(summaryData),
                         
                         OutlinedButton.icon(onPressed: restartTest , icon: const Icon(Icons.refresh_outlined), label: const Text('Restart Quiz!'),
-                        style: OutlinedButton.styleFrom(foregroundColor: Color.fromARGB(255, 186, 180, 180)))
+                        style: OutlinedButton.styleFrom(foregroundColor: const Color.fromARGB(255, 186, 180, 180)))
 
           ]
         ,),
